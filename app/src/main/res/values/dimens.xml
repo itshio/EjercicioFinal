@@ -11,6 +11,8 @@
     <dimen name='d40'>40dp</dimen>
     <dimen name='d45'>45dp</dimen>
     <dimen name='d50'>50dp</dimen>
+    <dimen name='d60'>60dp</dimen>
+    <dimen name='d70'>70dp</dimen>
     <dimen name='d120'>120dp</dimen>
     <dimen name='d100'>100dp</dimen>
     <dimen name='d0'>0dp</dimen>

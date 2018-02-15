@@ -23,7 +23,7 @@
     <style name="cabecera">
 
 
-        <item name="android:background">@drawable/generico</item>
+        <item name="android:background">@drawable/brasasfondo</item>
         <item name="android:layout_height">@dimen/d120</item>
         <item name="android:gravity">center_vertical|center_horizontal|center</item>
 
