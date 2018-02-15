@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EjercicioFinal</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="reservar">Reservar</string>
+    <string name="nombre">Nombre</string>
+    <string name="dia">Dia</string>
+    <string name="hora">Hora</string>
+    <string name="observacion">Observacion</string>
+    <string name="ver_referencias">Ver referencias</string>
+    <string name="mi_app">Mi app</string>
+    <string name="info">Info</string>
+    <string name="su_reserva">Su reserva</string>
+    </resources>
