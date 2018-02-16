@@ -10,4 +10,5 @@
     <string name="mi_app">Mi app</string>
     <string name="info">Info</string>
     <string name="su_reserva">Su reserva</string>
-    </resources>
+    <string name="personas">Nº de personas</string>
+</resources>

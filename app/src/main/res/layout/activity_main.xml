@@ -32,6 +32,7 @@
             android:layout_above="@+id/button3"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="38dp"
+            android:onClick="clickreserva"
             android:text="@string/reservar" />
 
         <Button
@@ -47,6 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="false"
+            android:onClick="clicklistview"
             android:orientation="horizontal">
 
             <TextView
@@ -65,6 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="clickinfo"
                 android:text="@string/info" />
         </LinearLayout>
     </RelativeLayout>
