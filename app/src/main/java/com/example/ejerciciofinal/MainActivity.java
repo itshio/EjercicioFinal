@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void clicklistview (View view){
 
-        Intent listview = new Intent(getApplicationContext(), ListviewActivity.class);
+        Intent listview = new Intent(getApplicationContext(),ListviewActivity.class);
         startActivity(listview);
     }
 
