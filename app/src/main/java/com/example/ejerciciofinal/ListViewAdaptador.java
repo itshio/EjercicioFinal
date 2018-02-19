@@ -16,12 +16,12 @@ import java.util.ArrayList;
  * Created by DIDACT on 16/02/2018.
  */
 
-public class ListViewAdaptador extends ArrayAdapter<ListViewClass> {
+public class ListViewAdaptador extends ArrayAdapter<ReservaClass> {
 
-    ArrayList<ListViewClass> clasereserva;
+    ArrayList<ReservaClass> clasereserva;
     Context c;
 
-    public ListViewAdaptador (Context c,ArrayList<ListViewClass> reservado){
+    public ListViewAdaptador (Context c, ArrayList<ReservaClass> reservado){
 
         super(c, R.layout.item_reservas, reservado);
         this.c =c;

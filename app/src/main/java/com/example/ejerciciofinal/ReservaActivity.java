@@ -41,7 +41,7 @@ public class ReservaActivity extends AppCompatActivity {
 
             if(bundreservados!=null){
 
-                ListViewClass reservados = bundreservados.getParcelable(ListviewActivity.EXTRA_LIST);
+                ReservaClass reservados = bundreservados.getParcelable(ListviewActivity.EXTRA_LIST);
                 reserv_nombre.setText(reservados.getNombre());
                 reserv_dia.setText(reservados.getDia());
                 reserv_hora.setText(reservados.getHora());

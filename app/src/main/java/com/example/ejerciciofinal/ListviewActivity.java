@@ -12,11 +12,11 @@ import java.util.ArrayList;
 
 public class ListviewActivity extends AppCompatActivity {
 
-    static final String EXTRA_LIST = "LISTVIEW";
+    static final String EXTRA_LIST = "FORMULARIO";
 
     TextView List_txtdia, List_txtnombre, List_txthora;
     ListView List_principal;
-    ArrayList<ListViewClass> lista_reservas= new ArrayList<ListViewClass>();
+    ArrayList<ReservaClass> lista_reservas= new ArrayList<ReservaClass>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class ListviewActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                ListViewClass c = ((ListViewClass)parent.getItemAtPosition(position));
+                ReservaClass c = ((ReservaClass)parent.getItemAtPosition(position));
                 String nombre= c.getNombre();
                 String hora= c.getHora();
                 String dia= c.getDia();
@@ -47,19 +47,36 @@ public class ListviewActivity extends AppCompatActivity {
                 List_txtdia.setText(dia);
                 List_txthora.setText(hora);
 
-                ListViewClass lista = new ListViewClass(nombre,hora,dia);
 
-                Intent form_lista =new Intent(getApplicationContext(),ReservaClass.class);
-                form_lista.putExtra(EXTRA_LIST,lista);
+
+
+
+
+
+
+
+
+
+
+            }
+        });
+
+        List_principal.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+
+                ReservaClass c = ((ReservaClass)parent.getItemAtPosition(position));
+
+
+                Intent form_lista =new Intent(getApplicationContext(),ReservaActivity.class);
+                form_lista.putExtra(EXTRA_LIST,c);
 
                 startActivity(form_lista);
 
 
 
 
-
-
-
+                return true;
             }
         });
 
@@ -71,14 +88,14 @@ public class ListviewActivity extends AppCompatActivity {
 
     private void cargarreservas (){
 
-        lista_reservas.add(new ListViewClass("Antonio","15.00","Lunes"));
-        lista_reservas.add(new ListViewClass("Juan","13.00","Martes"));
-        lista_reservas.add(new ListViewClass("Maria","16.00","Jueves"));
-        lista_reservas.add(new ListViewClass("Pol","11.00","Lunes"));
-        lista_reservas.add(new ListViewClass("Isabel","17.00","Martes"));
-        lista_reservas.add(new ListViewClass("Paula","14.00","Lunes"));
-        lista_reservas.add(new ListViewClass("Alvaro","15.00","Jueves"));
-        lista_reservas.add(new ListViewClass("Juan Jose","15.00","Lunes"));
+        lista_reservas.add(new ReservaClass("Antonio", 2    , "15.00","Lunes", "voy solo" ));
+        lista_reservas.add(new ReservaClass("Juan", 3   , "13.00","Martes", "voy solo"));
+        lista_reservas.add(new ReservaClass("Maria", 1  , "16.00","Jueves", "voy solo"));
+        lista_reservas.add(new ReservaClass("Pol", 3    , "11.00","Lunes", "voy solo"));
+        lista_reservas.add(new ReservaClass("Isabel", 1 , "17.00","Martes", "voy solo"));
+        lista_reservas.add(new ReservaClass("Paula", 4  , "14.00","Lunes", "voy solo"));
+        lista_reservas.add(new ReservaClass("Alvaro", 2 , "15.00","Jueves", "voy solo"));
+        lista_reservas.add(new ReservaClass("Juan Jose", 1  , "15.00","Lunes", "voy solo"));
 
 
 

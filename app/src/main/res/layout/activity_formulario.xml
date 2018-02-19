@@ -68,7 +68,7 @@
 
                 <Spinner
                     android:id="@+id/formu_sp_dia"
-                    android:layout_width="match_parent"
+                    android:layout_width="140dp"
                     android:layout_height="wrap_content" />
 
                 <TextView
@@ -79,7 +79,7 @@
 
                 <Spinner
                     android:id="@+id/formu_sp_hora"
-                    android:layout_width="match_parent"
+                    android:layout_width="120dp"
                     android:layout_height="wrap_content" />
 
                 <TextView

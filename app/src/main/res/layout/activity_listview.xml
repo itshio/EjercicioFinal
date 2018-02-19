@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="TextView" />
+            android:text="@string/dia" />
 
         <TextView
             android:id="@+id/listview_txt_dia"
@@ -41,7 +41,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="27dp"
             android:layout_marginStart="27dp"
-            android:text="TextView" />
+            android:text="@string/hora" />
 
         <TextView
             android:id="@+id/listview_txt_nombre"
@@ -51,7 +51,7 @@
             android:layout_alignLeft="@+id/listview_txt_hora"
             android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/listview_txt_hora"
-            android:text="TextView" />
+            android:text="@string/nombre" />
     </RelativeLayout>
 
     <ListView

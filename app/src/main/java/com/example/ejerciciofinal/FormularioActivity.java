@@ -50,6 +50,9 @@ public class FormularioActivity extends AppCompatActivity {
         String spdia= form_spdia.getSelectedItem().toString();
         String sphora= form_sphora.getSelectedItem().toString();
 
+
+
+
         if(nombre.equals("")|| personas.equals("")||spdia.equals("")||sphora.equals("")){
 
             Toast.makeText(this,"Debes rellenar todos los campos",Toast.LENGTH_LONG).show();
@@ -60,7 +63,7 @@ public class FormularioActivity extends AppCompatActivity {
 
             ReservaClass reserva = new ReservaClass(nombre,persona,observaciones,spdia,sphora);
 
-            Intent form_reserva =new Intent(getApplicationContext(),ReservaClass.class);
+            Intent form_reserva =new Intent(getApplicationContext(),ReservaActivity.class);
             form_reserva.putExtra(EXTRA_FORMULARIO,reserva);
 
             startActivity(form_reserva);
